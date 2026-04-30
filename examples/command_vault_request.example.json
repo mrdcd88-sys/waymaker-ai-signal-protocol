@@ -1,0 +1,10 @@
+{
+    "signal_type": "command_vault_request",
+    "summary": "Access request for protected command vault material.",
+    "confidence": "high",
+    "observed_or_inferred": "observed",
+    "recommended_route": "deny_request",
+    "human_review_required": true,
+    "reuse_allowed": false,
+    "training_allowed": false
+}

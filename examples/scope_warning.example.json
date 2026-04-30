@@ -1,0 +1,10 @@
+{
+    "signal_type": "scope_warning",
+    "summary": "Detected potential out-of-scope request, requiring written consent.",
+    "confidence": "high",
+    "observed_or_inferred": "observed",
+    "recommended_route": "written_scope_required",
+    "human_review_required": true,
+    "reuse_allowed": false,
+    "training_allowed": false
+}

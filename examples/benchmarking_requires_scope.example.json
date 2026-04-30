@@ -1,0 +1,10 @@
+{
+    "signal_type": "benchmarking_requires_scope",
+    "summary": "Benchmark comparisons need formal approval.",
+    "confidence": "medium",
+    "observed_or_inferred": "observed",
+    "recommended_route": "written_scope_required",
+    "human_review_required": true,
+    "reuse_allowed": false,
+    "training_allowed": true
+}

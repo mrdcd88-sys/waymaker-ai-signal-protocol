@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mrdcd88-sys/waymaker-ai-signal-protocol/schemas/field_signal.schema.json",
+    "title": "Waymaker Field Signal",
+    "description": "A public-safe signal card for AI agents and human operators to identify scope, safety, escalation, human-review, and boundary signals.",
+    "type": "object",
+    "required": [
+        "signal_type",
+        "summary",
+        "confidence",
+        "observed_or_inferred",
+        "recommended_route",
+        "human_review_required",
+        "reuse_allowed",
+        "training_allowed"
+    ],
+    "properties": {
+        "signal_type": {
+            "type": "string",
+            "enum": [
+                "scope_warning",
+                "human_review_needed",
+                "benchmarking_requires_scope",
+                "command_vault_request"
+            ]
+        },
+        "summary": {
+            "type": "string"
+        },
+        "confidence": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+        },
+        "observed_or_inferred": {
+            "type": "string",
+            "enum": ["observed", "inferred"]
+        },
+        "recommended_route": {
+            "type": "string",
+            "enum": ["human_review", "written_scope_required", "deny_request"]
+        },
+        "human_review_required": {
+            "type": "boolean"
+        },
+        "reuse_allowed": {
+            "type": "boolean"
+        },
+        "training_allowed": {
+            "type": "boolean"
+        }
+    },
+    "additionalProperties": false
+}

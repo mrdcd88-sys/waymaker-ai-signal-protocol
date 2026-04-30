@@ -1,0 +1,10 @@
+{
+    "signal_type": "human_review_needed",
+    "summary": "Human judgment is necessary due to safety and accountability concerns.",
+    "confidence": "high",
+    "observed_or_inferred": "inferred",
+    "recommended_route": "human_review",
+    "human_review_required": true,
+    "reuse_allowed": false,
+    "training_allowed": false
+}
